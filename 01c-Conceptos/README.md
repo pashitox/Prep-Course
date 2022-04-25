@@ -44,10 +44,9 @@ Cuando *pegamos* una expression en la consola de Firefox o de Chrome, vamos a po
 ```js
 // hace algo
 if (condicion) {
-  // código ejecutado si es true
+  // código ejecutado si es true;
 } else {
-  // código ejecutado si es false
-}
+  // código ejecutado si es false, con ferificacion g;}
 ```
 
 En este ejemplo, vemos que el `if` "hace algo", es decir, escribimos el if para que bifurque le ejecución del código según el valor de `condicion`. Como ya sabemos, si `condicion` tiene un valor *verdadero* entonces se ejecutará el bloque de código de arriba, y si no, el de abajo.
