@@ -139,6 +139,7 @@ Son expresiones que al ser evaluadas retornan algo, pero a su vez tienen *un efe
 
 ```js
 contador++; // retorna el valor de contador e incrementa uno.
+
 ++contador; // incrementa el valor de contador y retorna el valor;
 
 mult *= 2;// multiplica mult por dos, asigna ese valor a mult y retorna el valor;
@@ -146,9 +147,9 @@ mult *= 2;// multiplica mult por dos, asigna ese valor a mult y retorna el valor
 
 ## Statements (sentencias)
 
-Los *Statements* son instrucciones que le damos al intérprete de JS para que **haga algo**, ese algo puede ser: crear una variable, ejecutar un bloque de código N veces, ejecutar un bloque de código o no según una condición de verdad, declarar una función, etc...
+Los *Statements* son instrucciones que le damos al intérprete de JS para que **haga algo**, ese algo puede ser: crear una variable, ejecutar un bloque de código N veces, ejecutar un bloque de código o no según una condición de verdad, declarar una función, etc.......
 
-Podemos clasificar a los Statements en las siguientes categorías:
+Podemos clasificar a los Statements en las siguientes categorías:.:
 
 ### Declaration Statements
 
