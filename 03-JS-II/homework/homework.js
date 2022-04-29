@@ -177,6 +177,8 @@ function operadoresLogicos(num1, num2, num3) {
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
 
+  //ya entendi | and & 
+
 if (num1>0 &&  num1>num2 && num1>num3){
      
   return "Número 1 es mayor y positivo";
@@ -207,6 +209,17 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
+ 
+  for (var i = 2; i < numero; i++) {
+    if (numero%i==0){   
+        console.log("no primo", i);
+       return false;       
+    }
+};
+console.log(numero);
+console.log("es primo", i);
+return true;
+
 }
 
 function esVerdadero(valor){
@@ -214,18 +227,52 @@ function esVerdadero(valor){
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
 
+if (valor) {
+
+    return true;
+} else {
+
+    return false;
+
+}
+
 }
 
 function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
+
+
+  const numero = [1, 2, 3, 4, 5, 6 ,7 ,8, 9, 10];
+
+  let tabla = 6;
+  for (let i = 0; i < numero.length; i++) {
+    
+     var valor = tabla * numero[i];
+     
+     console.log(valor);
+
+     return valor;
+
+
+
   
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
+
+   if (x.toString().length === 3){
+
+    return true;
+   
+  } else {
+
+    return false;
+   }
+
   
 }
 
@@ -233,6 +280,17 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+
+let valor = 5;
+let i = 1;
+do {
+  text += i + "<br>";
+  i++;
+}
+while (i < 5);
+
+
+
 }
 
 
