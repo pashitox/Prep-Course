@@ -171,33 +171,33 @@ if (numero % 3 == 0){
 
 function operadoresLogicos(num1, num2, num3) {
   //La función recibe tres números distintos. 
-  //Si num1 es mayor a num2 y a num3 y además es positivo, retornar ---> "Número 1 es mayor y positivo"
-  //Si alguno de los tres números es negativo, retornar ---> "Hay negativos"
+  // 3----Si num1 es mayor a num2 y a num3 y además es positivo, retornar ---> "Número 1 es mayor y positivo"
+  // 1 ----Si alguno de los tres números es negativo, retornar ---> "Hay negativos"
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
-  //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
+  //2-----0  no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
 
   //ya entendi | and & 
 
-if (num1>0 &&  num1>num2 && num1>num3){
-     
-  return "Número 1 es mayor y positivo";
-
-}else if(num1>=0 && num2>=0 && num3>=0){
+  if(num1<0 || num2<0 || num3<0){
 
   return "Hay negativos";
 
-} else if (num3>num1 && num3>num2){
+} else if (num3===0 || num2===0 || num1===0){
+  return "Error";
+  
+} else if (num1>0 &&  num1>num2 && num1>num3){
+     
+  return "Número 1 es mayor y positivo";
+
+}else if(num3 > num1 && num3 > num2) {
   return num3 + 1;
-}else if (num3===0 && num2===0 && num1===0){
-  return "error"
-} else {
-
+}
+else {
   return false;
-
 }
 
-}
+};
 
 
 
@@ -210,16 +210,15 @@ function esPrimo(numero) {
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
  
+if (numero < 2) return false;
+if (numero === 2) return true;
+
   for (var i = 2; i < numero; i++) {
     if (numero%i==0){   
-        console.log("no primo", i);
-       return false;       
-    }
-};
-console.log(numero);
-console.log("es primo", i);
+      return false;       
+    } 
+}
 return true;
-
 }
 
 function esVerdadero(valor){
@@ -227,12 +226,11 @@ function esVerdadero(valor){
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
 
-if (valor) {
+if (Boolean(valor)) {
 
-    return true;
+    return "Soy verdadero";
 } else {
-
-    return false;
+    return "Soy falso";
 
 }
 
@@ -243,28 +241,27 @@ function tablaDelSeis(){
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
 
+ array = [];
 
-  const numero = [1, 2, 3, 4, 5, 6 ,7 ,8, 9, 10];
-
-  let tabla = 6;
-  for (let i = 0; i < numero.length; i++) {
-    
-     var valor = tabla * numero[i];
+ for (let i = 0; i < 11; i++) {
+            
+     console.log(i * 6);
      
-     console.log(valor);
-
-     return valor;
-
-
-
+     var tabla = 6
+ 
+     array.push(i* tabla);
+ 
+   //console.log(valor);
+ }
   
+ return array;
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
 
-   if (x.toString().length === 3){
+   if (numero.toString().length === 3){
 
     return true;
    
@@ -281,17 +278,22 @@ function doWhile(numero) {
   //Retornar el valor final.
   //Usar el bucle do ... while.
 
-let valor = 5;
-let i = 1;
-do {
-  text += i + "<br>";
-  i++;
-}
-while (i < 5);
+  let i = 1;
+  const n = 20;
+ // let a = 5;
+  
+  // do...while loop from 1 to 5
+  do {
+      
+      i++;
+   let r = numero += 5;  
+   return r;
+      //console.log(r);
+      
+  } while(i <= n)
 
 
-
-}
+};
 
 
 // No modificar nada debajo de esta línea
