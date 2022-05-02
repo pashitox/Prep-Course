@@ -278,22 +278,22 @@ function doWhile(numero) {
   //Retornar el valor final.
   //Usar el bucle do ... while.
 
-  let i = 1;
-  const n = 20;
- // let a = 5;
+
+let i = 0;
+let s = numero;
+
+do {
   
-  // do...while loop from 1 to 5
-  do {
-      
-      i++;
-   let r = numero += 5;  
-   return r;
-      //console.log(r);
-      
-  } while(i <= n)
+  s = s + 5;   
+  i = i + 1;
+  
+} while (i < 8);
 
+console.log(s);
 
-};
+return s;
+
+}
 
 
 // No modificar nada debajo de esta línea
