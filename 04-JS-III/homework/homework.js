@@ -95,11 +95,8 @@ function dePalabrasAFrase(palabras) {
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
 
- console.log(palabras);
-
-
-
-
+  return palabras.join(" ");
+ 
 }
 
 
@@ -107,6 +104,7 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+ return array.includes(elemento);
 }
 
 
@@ -114,6 +112,16 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+
+   var sum = 0;
+
+  for (let i = 0; i < numeros.length; i++) {
+  
+    sum += numeros[i];
+}
+
+return sum
+
 }
 
 
@@ -121,6 +129,17 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+
+  var sum = 0;
+  var cant = resultadosTest.length;
+
+  for (let i = 0; i < cant; i++) {
+  
+    sum += resultadosTest[i];  
+}
+
+return sum/cant;
+
 }
 
 
@@ -128,13 +147,31 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
+  var max = Math.max(...numeros);
+
+  return max;
+
 }
 
 
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
-  // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
+  // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
+  for (let i = 0; i < cant; i++) {
+    if (ar[i]!=0){
+    total = ar[i]*total;
+    
+        
+    } else {
+    return 0;   
+    }
+    }
+    console.log(total);
+    return total
+    }
+ 
+
 }
 
 
