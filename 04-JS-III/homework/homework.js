@@ -268,6 +268,50 @@ function mesesDelAño(array) {
 }
 
 
+//function c (array) {
+//  var nuevoArray = [];
+//    for(let i= 0; i<array.length; i++) {
+//      if(array[i] === "January" || array[i] === "March" || array[i] === "November") {
+//        nuevoArray.push(array[i]);
+//      }
+//    }
+//    if(nuevoArray.length < 3) {
+//      return "No se encontraron los meses pedidos";
+//    }
+//    else {
+//        return nuevoArray;
+//    }
+//    
+//     }
+//     
+//      var m1 = [ 'February', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'December'];
+//     
+//     var m2 = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+//     
+//     var m3 = [];
+//     
+//      var m4 = ["January",'November','March'];
+//     
+//     console.log(c(m1));
+//      console.log(c(m2));
+//       console.log(c(m3));
+//        console.log(c(m4));
+//
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
