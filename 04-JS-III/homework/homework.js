@@ -174,9 +174,13 @@ function multiplicarArgumentos() {
 }
 
 
-function cuentoElementos(arreglo){
+function cuentoElementos(words){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
+
+  const result = words.filter(word => word > 18);
+  return result.length;
+
 
 }
 
@@ -186,6 +190,15 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
+
+  if (numeroDeDia == 1 || numeroDeDia == 7){
+    
+    return "Es fin de semana";
+} else {
+    
+    return "Es dia Laboral";
+}
+
   
 } 
 
@@ -194,7 +207,16 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
+
   
+var str = n.toString();      
+var pos = str.indexOf(9); 
+if(pos === 0){
+return true;
+} else{
+return false;
+
+}  
 }
 
 
@@ -202,6 +224,24 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
+
+  
+  //let duplicates = [] 
+  
+  const tempArray = arreglo.sort();  
+  //console.log(tempArray);  
+  for (let i = 0; i < tempArray.length; i++) {
+   
+  
+  if (tempArray[i+1] === tempArray[i]) {
+  return true;    
+  //duplicates.push(tempArray[i])
+  }else {
+  return false;    
+  }
+  }
+
+
   
 } 
 
@@ -211,6 +251,11 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
+
+  
+
+
+
 }
 
 
