@@ -132,7 +132,7 @@ function tienePropiedad (objeto, propiedad) {
 }
 
     
-  }
+  
 
 
 function verificarPassword (usuario, password) {
@@ -159,6 +159,17 @@ function actualizarPassword (usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevagPassword"
   // Devuelve el objeto
   // Tu código:
+
+                
+   usuario["password"] = nuevaPassword;
+  
+  return usuario
+
+
+
+
+
+
 }
 
 function agregarAmigo (usuario, nuevoAmigo) {
@@ -166,7 +177,15 @@ function agregarAmigo (usuario, nuevoAmigo) {
   // Agrega "nuevoAmigo" al final de ese array
   // Devuelve el objeto "usuario"
   // Tu código:
+
+ usuario.amigos.push(nuevoAmigo);
+
+ return usuario;
+
 }
+
+
+
 
 function pasarUsuarioAPremium (usuarios) {
   // "usuarios" es un array de objetos "usuario"
@@ -174,7 +193,22 @@ function pasarUsuarioAPremium (usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
+
+  for(var i = 0; i < usuarios.length; i++) {
+    usuarios[i].esPremium = true;
+  }
+  return usuarios;
 }
+
+
+
+
+
+
+
+
+
+
 
 function sumarLikesDeUsuario (usuario) {
   // "usuario" tiene una propiedad llamada "posts" que es un array
