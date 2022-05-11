@@ -111,10 +111,28 @@ function capicua(numero){
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
 
+      var str = numero.toString(); 
+
+  var a = str.slice(0,1);
+    var b = str.slice(3);
+    var c = str.slice(4);
+ //   console.log(a);
+ //   console.log(b);
+ //   console.log(c);
+
+if (a === b || a === c){
+
+return "Es capicua";
+
+} else {
+
+return "No es capicua"; 
+
+
+}
 
 
 
-  
 }
 
 
@@ -122,13 +140,37 @@ function deleteAbc(cadena){
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
+
+
+  var m = cadena.split('');
+  console.log(m);  
+  suma = []
+  for(var i = 0; i < m.length; i++) {
+    console.log(m[i])
+    if (m[i]==="a" || m[i]==="b" || m[i]==="c" ){
+
+    } else {
+     suma.push(m[i])
+     console.log(suma)
+    }   
+    }
+
+    return suma.join("") 
 }
-
-
 function sortArray(arr) {
   //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
   //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
+
+ console.log(arr);
+  
+  
+ let lowestToHighest = arr.sort((a, b) => a.length - b.length);
+
+return lowestToHighest;
+  //suma = []
+ 
+
 }
 
 
@@ -137,7 +179,20 @@ function buscoInterseccion(arreglo1, arreglo2){
   //retornar un nuevo array con la intersección de ambos elementos. (Ej: [4,2,3] unión [1,3,4] = [3,4].
   //Si no tienen elementos en común, retornar un arreglo vacío.
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
-  //Escribe tu código aquí  
+  //Escribe tu código aquí 
+  
+  
+  var duplicates = arreglo1.filter((val)=>{
+    
+    var e = arreglo2.indexOf(val) !== -1;
+    console.log(e)
+  return e
+});
+
+
+return duplicates;
+
+
 }
 
 
