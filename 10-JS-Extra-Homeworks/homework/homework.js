@@ -10,6 +10,14 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+
+
+ const result = Object.entries(objeto);
+
+
+
+ return result
+
 }
 
 
@@ -18,6 +26,32 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+
+ // var count = {};
+ // string.split('').forEach(function(s) {
+ //    count[s] ? count[s]++ : count[s] = 1;
+ // });
+//
+ // console.log(count);
+ // return count;
+
+
+ var freq = {};
+ for (var i=0; i<string.length;i++) {
+     var character = string.charAt(i);
+  
+          
+     if (freq[character]) {
+        freq[character]++;
+     } else {
+        freq[character] = 1;
+     }
+ }
+
+ return freq;
+
+
+
 }
 
 
@@ -26,7 +60,21 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+
+
+     var d = s.split('');
+
+  const result = d.sort((a, b) => /[A-Z]/.test(a) ? /[A-Z]/.test(b) ? 0 : -1 : 0)
+  .join('');
+
+ 
+ return result;
+
+  
+
+
 }
+
 
 
 function asAmirror(str) {
@@ -35,6 +83,25 @@ function asAmirror(str) {
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
+
+  suma = []
+    var m = str.split(' ');
+     for(var i = 0; i < m.length; i++) {
+        var v = m[i].split('')
+        var a = v.reverse();
+       // console.log(a);
+        var b = a.join("")
+      suma.push(b)
+   // console.log(b)
+  }
+   
+  // console.log();
+   var z = suma.join(" ");
+   
+  // console.log(z);
+   return z;
+
+ 
 } 
 
 
@@ -43,6 +110,11 @@ function capicua(numero){
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
+
+
+
+
+  
 }
 
 
