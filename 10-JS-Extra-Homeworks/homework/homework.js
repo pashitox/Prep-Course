@@ -63,11 +63,8 @@ function capToFront(s) {
 
 
      var d = s.split('');
-
   const result = d.sort((a, b) => /[A-Z]/.test(a) ? /[A-Z]/.test(b) ? 0 : -1 : 0)
-  .join('');
-
- 
+  .join(''); 
  return result;
 
   
